@@ -1,0 +1,192 @@
+main{
+    font-family: "標楷體";
+}
+
+.member_form{
+    padding-left: 10%;
+}
+
+.member_form input[type="text"],.member_form input[type="email"]{
+    margin-left: 5%;
+}
+
+.member_form select,.member_form input[type="date"]{
+    margin-left: 8%;
+}
+
+.member_form a{
+    margin-left: 4%;
+}
+
+.member_form .card{
+    margin-left: 7%;
+    
+}
+
+.member_form input[type="submit"],.member_form input[type="reset"]{
+    margin-right: 1cm;
+}
+
+.member_form form div{
+    margin-left: 30%;
+    margin-top: 8%;
+}
+
+header{
+    grid-area: header;
+    background-color: white;
+    font-family: "標楷體";
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1.5px black solid;
+    width: 100%;
+    position: fixed; 
+    max-height: 80px;
+    margin: 0%;
+    padding: 0%;
+    z-index: 100;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+    margin-left: 20%;
+}
+
+.search{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.style{
+    float: right;
+    margin-right: 0.5cm;
+}
+
+
+
+.nav-list{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 15%;
+}
+
+header .nav-list li{
+    float: left;
+    margin-right: 20px;
+}
+
+.nav-list li dl a , .nav-list li dd a{
+    display: block;
+}
+
+.nav-list li dt{
+    width: 120px;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav-list li dt a,.nav-list li dt a:visited{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-list li dd{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+.nav-list li dd a,.nav-list li dd a:visited{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+}
+
+.nav-list li dd{
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-list li:hover dd, .nav-list li a:hover dd{
+    display: block;
+}
+
+ 
+.nav-list li dd a:hover{
+    color: white;
+    background-color: rgb(149, 142, 246);
+}
+
+.modal-content{
+    font-family: "標楷體";
+}
+
+.modal-header p{
+    font-size: 20px;
+    margin: 0% 34%;
+}
+
+.modal-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group p{
+    padding-top:10% ;
+}
+
+.modal-footer input{
+    position: relative;
+    right: 40%;
+}
+
+.modal-header1 p{
+    font-size: 20px;
+}
+
+.cardpos{
+    margin-right: 0.8cm;
+}
+
+.searchbutton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_con{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header button{
+    width: 23px;
+    height: 23px;
+}
+
+header input{
+    margin: 0%;
+    padding: 0%
+}
+
+.search1{
+    width: 15px;
+    height: 15px;
+}

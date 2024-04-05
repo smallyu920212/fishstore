@@ -1,0 +1,64 @@
+body{
+    width: 100%;
+    height: 700px;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows:80px auto 130px;
+    grid-template-columns:auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+main{
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "標楷體";
+    font-size: 20px;
+}
+
+.allcontent{
+    width: 40%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.allcontent form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+.allcontent form input{
+    width: 10cm;
+    height: 0.7cm;
+}
+
+.allcontent form button{
+    background-color: lightblue;
+    border: none;
+    color: rgb(20, 20, 147);
+    font-family: "標楷體";
+    font-size: 17px;
+    width: 10cm;
+    height: 0.7cm;
+}
+
+.allcontent form a{
+    color: rgb(20, 20, 147);
+}

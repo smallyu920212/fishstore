@@ -1,0 +1,54 @@
+main article{
+    width: 90%;
+    height: 80%;
+    border: 1px rgb(176, 173, 173) solid;
+    margin-left: 5%;
+}
+main article section{
+    width: 95%;
+    height: 95%;
+    margin-left: 2.5%;
+    margin-top: 1%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "標楷體";
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+.price_total{
+    width: 10%;
+}
+
+.bottom{
+    width: 20%;
+}
+
+main article section table input{
+    margin-left: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

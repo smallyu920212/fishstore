@@ -1,0 +1,115 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&display=swap');
+
+
+
+header {
+    position: relative;
+    top: 0;
+    background-color: white;
+    padding: 1px;
+    width: 100%;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+nav{
+    z-index: 1;
+    position: sticky !important;
+    top: 0;
+    padding: 1px;
+    margin: 5px 0px;
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.reset{
+    clear: both;
+}
+
+footer {
+    background-color: #cda8b8;
+    color: #444444;
+    text-align: center;
+    padding: 20px 0px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: -1;
+}
+div.BTT {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.topbutton{
+    position: relative;
+    text-align: right;
+    width: 100%;
+}
+
+.topbutton img{
+    width: 30px;
+}
+
+@media screen and (max-width: 425px) {
+    .text {font-size: 11px}
+    li a, .dropbtn {
+        font-family: 'Noto Serif TC', serif;
+        text-align: center;
+        padding: 4px 15px;
+        text-decoration: none;
+    }
+  }

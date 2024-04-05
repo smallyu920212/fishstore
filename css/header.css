@@ -1,0 +1,146 @@
+header{
+    grid-area: header;
+    background-color: white;
+    font-family: "標楷體";
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1.5px black solid;
+    width: 100%;
+    position: fixed; 
+    max-height: 80px;
+    margin: 0%;
+    padding: 0%;
+    z-index: 100;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+    margin-left: 10cm;
+}
+
+.search{
+    width: 20px;
+    height: 20px;
+}
+
+.search1{
+    width: 15px;
+    height: 15px;
+}
+
+.style{
+    float: right;
+    margin-right: 0.5cm;
+    margin-top: 1%;
+}
+
+header button{
+    width: 23px;
+    height: 23px;
+    background-color: #eee;
+    border: 1px black solid;
+    padding: 0%;
+}
+
+header input{
+    margin: 0%;
+    padding: 0%
+}
+
+.nav-list{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    margin-left: 15%;
+}
+
+header .nav-list li{
+    float: left;
+    margin-right: 20px;
+}
+
+.nav-list li dl a , .nav-list li dd a{
+    display: block;
+}
+
+.nav-list li dt{
+    width: 120px;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav-list li dt a,.nav-list li dt a:visited{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-list li dd{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+.nav-list li dd a,.nav-list li dd a:visited{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+}
+
+.nav-list li dd{
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-list li:hover dd, .nav-list li a:hover dd{
+    display: block;
+}
+
+ 
+.nav-list li dd a:hover{
+    color: white;
+    background-color: rgb(149, 142, 246);
+}
+
+.searchbutton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_con{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

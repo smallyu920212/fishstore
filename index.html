@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <script src="./script/main_script.js"></script>
+    <script src="./script/nav_script.js"></script>
+    <script src="./script/advertisement.js"></script>
+    
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/advertisement.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body onload="autopic(0)">
+    <header>
+        <div>
+            <img class="logo" src="image/fish (2).png" alt="">海裡撈
+            <a class="style" href="shopcar.html"><img class="search" src="image/shopping-cart.png" alt=""></a>
+            <a class="style" href="member_center.html"><img class="search" src="image/user.png" alt=""></a>
+            <div class="style"><div class="search_con"><input type="text" placeholder="搜尋" id=""><button class="searchbutton"><img src="image/search.png" class="search1" alt=""></button></div></div> 
+        </div>
+        <div>
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <dl>
+                            <dt><a href="index.html">首頁</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="">所有商品</a></dt>
+                            <dd><a href="alllist.html">ALL</a></dd>
+                            <dd><a href="sortlist.html">魚類</a></dd>
+                            <dd><a href="sortlist.html">甲殼類</a></dd>
+                            <dd><a href="sortlist.html">軟體動物類</a></dd>
+                            <dd><a href="sortlist.html">淺海</a></dd>
+                            <dd><a href="sortlist.html">深海</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="sale.html">本月活動優惠</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="abuot_us.html">關於我們</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="contactus.html">聯絡我們</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="buy.html">購物須知</a></dt>
+                        </dl>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="advertisement">
+            <div class="slideshow-container">
+                <div class="advpic fade">
+                    <img src="image/beach-4814418_1280.jpg" class="adverphoto">
+                </div>
+                <div class="advpic fade">
+                    <img src="image/fish.jpeg" class="adverphoto">
+                </div>
+                <div class="advpic fade">
+                    <img src="image/crab.png" class="adverphoto">
+                </div>
+            </div>
+            <div style="text-align:right;margin-right: 30px;">
+                <button onclick="location.href = 'sale.html'">SEE MORE</button><br>
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+            <script>showSlides()</script>
+        </div>
+        <div class="map">
+            <h2>分類導航</h2>
+            <div class="map_button">
+                <img src="image/fish.jpeg" class="buttonpic" onclick="fishClick();location.href='sortlist.html'" ID="fishbutton" style="background-color: lightgray;">
+                <img src="image/crab.png" class="buttonpic" onclick="crabClick();location.href='sortlist.html'" ID="crabbutton">
+                <img src="image/octopus.jpeg" class="buttonpic" onclick="octopusClick();location.href='sortlist.html'"ID="octopusbutton">
+            </div>
+            <div class="sorttit">
+                <p class="fish">魚類</p>
+                <p class="crab">甲殼類</p>
+                <p class="oct">軟體動物類</p>
+            </div>
+            <div class="world">
+                <img style="display: block;" src="image/map.jpg" usemap="#fishmap" height="400" class="worldmap" ID="fish">
+                <img style="display: none;" src="image/map.jpg" usemap="#crabmap" height="400" class="worldmap" ID="crab">
+                <img style="display: none;" src="image/map.jpg" usemap="#octopusmap" height="400" class="worldmap" ID="octopus">
+                
+                <map name="fishmap">
+                    <area title="淺海魚" shape="rect" coords="0,0,400,160" href="sortlist.html">
+                    <area title="深海魚" shape="rect" coords="0,160,400,400" href="sortlist.html">
+                </map>
+                <map name="crabmap">
+                    <area title="淺海甲殼" shape="rect" coords="0,0,400,160" href="sortlist.html">
+                    <area title="深海甲殼" shape="rect" coords="0,160,400,400" href="sortlist.html">
+                </map>
+                <map name="octopusmap">
+                    <area title="淺海軟體" shape="rect" coords="0,0,400,160" href="sortlist.html">
+                    <area title="深海軟體" shape="rect" coords="0,160,400,400" href="sortlist.html">
+                </map>
+                <br>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="hottit">熱門商品</div>
+        <div class="hotback">
+            <div class="hotitem">
+                <div class="hotleft">
+                    <div class="wave">
+                    </div>
+                    <div class="circle"></div>
+                    <div class="hotgood"><img src="image/c1.jpg" alt="" class="hotgoodpic"></div>
+                </div>
+                <div class="hotright">
+                    <div class="textre">
+                        <p class="tit">椰子蟹</p>
+                        <p>殼薄肉厚，口感滑潤勁道鮮嫩，且輕彈可口!碩大的蟹殼裡包裹著肥美的蟹肉，不浪費任何一絲角落。新鮮的蟹腹色澤艷麗，因為我們的椰子蟹都來自無汙染天然生活環境，因此全蟹乾淨無雜質與土味!</p>
+                        <p><button onclick="location.href = 'fish.html'">去看看-></button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hotitem">
+                <div class="hotleft1">
+                    <div class="textre">
+                        <p class="tit">大王具足蟲</p>
+                        <p>雖然大王具足蟲擁有較不討喜的外型，但它確實被饕客視為美味佳餚，牠吃起來有點像蟹肉，以及偏淡的龍蝦或蝦味，肉質口感還是比螃蟹再鬆一點，海味比較重，「大王具足蟲膏」味道則是比蟹膏更加濃厚!
+                            如果想要嘗鮮的朋友也歡迎選購，挑戰看看喔!
+                            </p>
+                        <p><button onclick="location.href = 'fish.html'">去看看-></button></p>
+                    </div>
+                </div>
+                <div class="hotright1">
+                    <div class="wave">
+                    </div>
+                    <div class="circle"></div>
+                    <div class="hotgood"><img src="image/c5.jpg" alt="" class="hotgoodpic"></div>
+                </div>
+            </div>
+            <div class="hotitem">
+                <div class="hotleft">
+                    <div class="wave">
+                    </div>
+                    <div class="circle"></div>
+                    <div class="hotgood"><img src="image/f5.jpg" alt="" class="hotgoodpic"></div>
+                </div>
+                <div class="hotright">
+                    <div class="textre">
+                        <p class="tit">鰻魚</p>
+                        <p>鰻的魚刺是屬於軟刺，中間的硬骨都去掉了，剩邊邊的軟刺，所以愈小尾愈吃不到刺，而且肉質更細緻!好吃的鰻魚是要現撈的，要現殺後真空裝打冰運送，讓所有好朋友吃到最新鮮頂級白鰻!</p>
+                        <p><button onclick="location.href = 'fish.html'">去看看-></button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <p class="hottit">限時活動</p>
+        <div class="aside1">
+            <div class="card">
+                <div class="cardphoto">
+                    <img src="image/s1.jpg" alt="" class="cardimg" onclick="location.href='sale.html'">
+                </div>
+                <div class="cardconent">
+                    <span style="color: red;">買二送一</span><br>
+                    <span>女王扇貝</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardphoto">
+                    <img src="image/f9.jpg" alt="" class="cardimg" onclick="location.href='sale.html'">
+                </div>
+                <div class="cardconent">
+                    <span style="color: red;">買二送一</span><br>
+                    <span>黑鮪魚</span>
+                </div>
+            </div><div class="card">
+                <div class="cardphoto">
+                    <img src="image/f10.jpg" alt="" class="cardimg" onclick="location.href='sale.html'">
+                </div>
+                <div class="cardconent">
+                    <span style="color: red;">買二送一</span><br>
+                    <span>靖魚</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <nav>
+            <a href="sale.html">最新消息</a>
+            <a href="buy.html">常見問題</a>
+            <a href="buy.html">會員問題</a>
+            <a href="buy.html">售後服務</a>
+        </nav>
+        <div>
+            tel:(03)111-1111<br>
+            320桃園市中壢區中北路200號<br>
+            Copyright©2023_yu 
+        </div>
+        <div>
+            <a href="mailto:a0981002215@gmail.com" enctype="text/plain"><img class="social" src="image/email.png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/instagram.png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/line (1).png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/facebook.png" alt=""></a>
+        </div>        
+    </footer>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>

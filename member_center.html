@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人帳戶管理</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/member.css">
+    <link rel="stylesheet" href="css/member_center.css">
+    
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="image/fish (2).png" alt="">海裡撈
+            <a class="style" href="shopcar.html"><img class="search" src="image/shopping-cart.png" alt=""></a>
+            <a class="style" href="member_center.html"><img class="search" src="image/user.png" alt=""></a>
+            <div class="style"><div class="search_con"><input type="text" placeholder="搜尋" id=""><button class="searchbutton"><img src="image/search.png" class="search1" alt=""></button></div></div> 
+        </div>
+        <div>
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <dl>
+                            <dt><a href="index.html">首頁</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="">所有商品</a></dt>
+                            <dd><a href="alllist.html">ALL</a></dd>
+                            <dd><a href="sortlist.html">魚類</a></dd>
+                            <dd><a href="sortlist.html">甲殼類</a></dd>
+                            <dd><a href="sortlist.html">軟體動物類</a></dd>
+                            <dd><a href="sortlist.html">淺海</a></dd>
+                            <dd><a href="sortlist.html">深海</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="sale.html">本月活動優惠</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="abuot_us.html">關於我們</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="contactus.html">聯絡我們</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="buy.html">購物須知</a></dt>
+                        </dl>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h3 style="font-family:'標楷體';font-size: 20px;">會員中心<hr></h3>
+        <div class="member_form">
+            <p>編輯會員資料</p>
+            <form action="">
+                <p>會員名稱<input type="text" name="username" size="50%"></p>
+                <p>電子郵件<input type="email" name="email" size="50%"></p>
+                <p>行動電話<input type="text" name="phone" size="50%"></p>
+                <p>性別<select name="gender" id="gender"><option value="male">男性</option><option value="female">女性</option><option value="none">不方便透漏</option></select></p>
+                <p>生日<input type="date"></p>
+                <p><span class="cardpos">信用卡</span><a href="#" type="button" data-bs-toggle="modal" data-bs-target="#addcard">新增信用卡</a></p>
+                <p>儲存的地址<a href="#" type="button" data-bs-toggle="modal" data-bs-target="#addaddress">新增儲存地</a></p>  
+                <div>
+                    <input type="submit" value="確定修改">
+                    <input type="reset" value="取消">
+                </div>
+            </form>
+        </div>
+    </main>
+    <aside>
+        <nav>
+            <div class="sign"><a href="member_center.html">個人帳戶管理</a></div>
+            <div class="nosign"><a href="history.html">歷史訂單</a></div>
+            <div class="nosign"><a href="comment.html">我的評價</a></div>
+            <div class="nosign"><a href="password.html">密碼修改</a></div>
+            <div class="nosign"><a href="index.html">會員登出</a></div>
+        </nav>
+    </aside>an
+    <div class="modal fade" id="addcard">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <p>新增信用卡</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form action="">
+                <div class="modal-main">
+                    <div class="form-group">
+                        <p><input type="text" placeholder="卡號" size="30%"></p>
+                        <p><input type="text" placeholder="持卡人姓名" size="30%"></p>
+                        <p><input type="text" placeholder="有效期(MM/YY)" size="30%"></p>
+                        <p><input type="text" placeholder="安全碼" size="30%"></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="reset" value="取消">
+                    <input type="submit" value="送出">
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addaddress">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <p>新增送貨資料</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-main">
+                <form action="">
+                  <div class="form-group">
+                    <p><input type="text" placeholder="收件人名稱" size="30%"></p>
+                    <p><input type="text" placeholder="電話號碼" size="30%"></p>
+                    <p><input type="text" placeholder="地址" size="30%"></p>
+                  </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <input type="reset" value="取消">
+                <input type="submit" value="儲存">
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <a href="sale.html">最新消息</a>
+            <a href="buy.html">常見問題</a>
+            <a href="buy.html">會員問題</a>
+            <a href="buy.html">售後服務</a>
+        </nav>
+        <div>
+            tel:(03)111-1111<br>
+            320桃園市中壢區中北路200號<br>
+            Copyright©2023_yu 
+        </div>
+        <div>
+            <a href="mailto:a0981002215@gmail.com" enctype="text/plain"><img class="social" src="image/email.png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/instagram.png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/line (1).png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/facebook.png" alt=""></a>
+        </div>        
+    </footer>
+</body>
+</html>

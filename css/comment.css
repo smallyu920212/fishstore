@@ -1,0 +1,179 @@
+.pos{
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+}
+
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    font-family: "標楷體";
+    margin-left:5% ;
+}
+
+.tabs_label{
+    cursor: pointer;
+    margin-right: 3%;
+}
+
+.tabs_radio{
+    display: none;
+}
+
+.tabs_content{
+    order: 1;
+    width: 100%;
+    display: none;
+}
+
+.tabs_radio:checked+.tabs_label{
+    color: rgb(28, 28, 103);
+    border-bottom: 1px solid rgb(28, 28, 103);
+}
+
+.tabs_radio:checked+.tabs_label+.tabs_content{
+    display: block;
+}
+
+.left{
+    width: 15%;
+    height: 250px;
+    margin: 2% 4% 3% 2%;
+    background-color: #d4e5ef;
+    float: left;
+}
+
+.left table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right table{
+    width: 75%;
+}
+
+
+.right td{
+    border: 1px solid black;
+}
+
+.right .goodpic{
+    width: 80px;
+    height: 80px;
+    background-color: #eee;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.table_td{
+    width: 20%;
+}
+
+.stars label{
+    color: lightgrey;
+    text-shadow: 1px 1px #eee;
+    float: right;
+}
+
+.stars label::before{
+    content: "★";
+}
+
+.stars input{
+    display: none;
+}
+
+.stars input:checked ~ label{
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+
+.stars{
+    float: left;
+}
+
+.stars:not(:checked)>label:hover,
+.stars:not(:checked)>label:hover ~ label{
+    color: gold;
+}
+
+.stars input:checked>label:hover,
+.stars input:checked>label:hover ~ label{
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+
+.right table input{
+    margin-right: 2%;
+    float: right;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+table .title{
+    text-align: center;
+    background-color: #d4e5ef;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 1%;
+    border-bottom: 2px solid #d4e5ef;
+}
+
+section .userpic{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+
+section .username{
+    font-size: 10px;
+    margin-left: 3%;
+}
+
+section .star{
+    font-size: 10px;
+}
+
+.date_good{
+    font-size: 10px;
+    color: #9e9e9e;
+    margin-left: 30px;
+}
+
+.goodpic1{
+    width: 30px;
+    height: 30px;
+    margin-left: 3%;
+}
+
+section table{
+    width: 80%;
+    background-color: #e9e8e8;
+    margin-bottom: 1%;
+}
+
+section tr td{
+    border-bottom: 3px solid white;
+}
+
+.mycomment_content{
+    margin-left: 3%;
+    padding-top: 1%;
+
+}
+
+.nomore{
+    background-color:#d4e5ef ;
+    width: 95%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.size{
+    width: 5%;
+}

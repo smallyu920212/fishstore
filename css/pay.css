@@ -1,0 +1,183 @@
+body{
+    width: 100%;
+    height: 1090px;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    font-family: "標楷體";
+    grid-template-rows:80px 550px 280px 50px 130px;
+    grid-template-columns: auto 40%;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "aside section"
+    "section1 section1"
+    "footer footer";
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1{
+    grid-area: section1;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order_detail{
+    width: 90%;
+    height: 85%;
+}
+
+.order_list{
+    width: 95%;
+    height: 110px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5cm;
+
+}
+
+.order_list_left{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order_list_center{
+    width: 75%;
+    height: 100%;
+}
+
+.order_list_right{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    margin: 0%;
+    padding: 0%;
+}
+
+.order_detail_title_style{
+    font-size: 22px;
+    padding: 0.4cm;
+}
+
+.order_detail_conent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order_detail_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order_list_pic{
+    width: 110px;
+    height: 110px;
+    background-color: #eee;
+}
+
+.order_detail_pricetotal{
+    text-align: center;
+    font-size: 19px;
+}
+
+.deliver_information{
+    width: 85%;
+    height: 95%;
+    background-color: lightblue;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+}
+
+.pay_information{
+    width: 83%;
+    height: 52%;
+    background-color: lightblue;
+    margin-bottom: 0.4cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information_title{
+    font-size: 19px;
+    text-align: center;
+}
+
+.deliver_information input[type="text"]{
+    border: none;
+    width: 8cm;
+}
+
+.numbertext{
+    margin-left: 0.7cm;
+}
+
+.note{
+    width: 83%;
+    height: 38%;
+    background-color: lightblue;
+}
+
+.buttonre_style{
+    border: none;
+    background-color: white;
+    border-radius: 40px;
+    width: 20%;
+    font-family: "標楷體";
+    font-size: 16px;
+}
+
+.information_title textarea{
+    border: none;
+}
+
+.paybuttonstyle{
+    border: none;
+    background-color: rgb(4, 4, 57);
+    color: white;
+    border-radius: 40px;
+    width: 10%;
+    padding-top: 0.1cm;
+    padding-bottom: 0.1cm;
+    font-size: 18px;
+    font-family: "標楷體";
+}

@@ -1,0 +1,245 @@
+body{
+    width: 100%;
+    height: 850px;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows:80px auto 130px;
+    grid-template-columns:auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+main{
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.allcontent{
+    width: 40%;
+    height: 80%;
+}
+
+.allcontent nav{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.allcontent nav label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "標楷體";
+    position: relative;
+    z-index: 1;
+    color: #818181;
+    transition: all 0.3s ease;
+}
+
+.allcontent nav .slider{
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    background-color:rgb(237, 237, 237);
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+#sign:checked ~ nav .slider{
+    left: 0%;
+}
+
+#login:checked ~ nav label.login,
+#sign:checked ~ nav label.sign{
+    color: black;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.textcontent{
+    width: 100%;
+    height: 90%;
+}
+
+.textcontent .content{
+    display: none;
+}
+
+#login:checked ~ .textcontent .content-1,
+#sign:checked ~ .textcontent .content-2{
+    display: block;
+}
+
+.content_text1{
+    width: 100%;
+    height: 340px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    font-family: "標楷體";
+}
+
+.content_text1 form,.content_text form{
+    margin-top: 1cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_text1 form input{
+    width: 10cm;
+    height: 0.7cm;
+}
+
+.content_text1 form button,.content_text form button{
+    width: 10cm;
+    background-color: lightblue;
+    border: none;
+    color: rgb(20, 20, 147);
+    font-size: 18px;
+    font-family: "標楷體";
+}
+
+.content_text1 form a{
+    color: rgb(20, 20, 147);
+}
+
+.content_text{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    font-family: "標楷體";
+}
+
+.content_text form select,.content_text form input[type="password"],.content_text form input[type="date"]{
+    width: 9cm ;
+    height: 0.7cm;
+}
+
+.content_text form input[type="text"],
+.content_text form input[type="email"],
+.content_text form input[type="tel"]{
+    width: 8cm ;
+    height: 0.7cm;
+}
+
+
+/* .fuction {
+    text-align: right;
+}
+
+.menu {
+    margin-left: 30px;
+    padding-right: 20px;
+}
+
+
+.form-box {
+    margin-top: 30px;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.button-box {
+    background-color: rgb(194, 194, 194);
+    width: 780px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.toggle-btn {
+    padding: 15px 30px;
+
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    background: white;
+    transition: .5s;
+    border-radius: 15px;
+}
+
+.input-group {
+    margin-top: 20px;
+    text-align: center;
+
+    transition: .5s;
+}
+
+.input-field {
+    width: 500px;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: 0 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    align-items: center;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.submit-btn {
+    width: 300px;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: lightblue;
+    color: darkblue;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    text-align: center;
+}
+
+main {
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+} */
+

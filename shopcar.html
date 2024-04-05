@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/shopcar.css">
+    <script>
+        function add(){
+            var num = document.getElementById("num");
+            num.value = parseInt(num.value)+1;
+        }
+
+        function minus(){
+            var num = document.getElementById("num");
+            if(num.value <=0){
+                num.value = 0;
+            }
+            else{
+                num.value = parseInt(num.value)-1;
+            }
+        }
+
+        function add1(){
+            var num1 = document.getElementById("num1");
+            num1.value = parseInt(num1.value)+1;
+        }
+
+        function minus1(){
+            var num1 = document.getElementById("num1");
+            if(num1.value <=0){
+                num1.value = 0;
+            }
+            else{
+                num1.value = parseInt(num1.value)-1;
+            }
+        }
+
+        function add2(){
+            var num2 = document.getElementById("num2");
+            num2.value = parseInt(num2.value)+1;
+        }
+
+        function minus2(){
+            var num2 = document.getElementById("num2");
+            if(num2.value <=0){
+                num2.value = 0;
+            }
+            else{
+                num2.value = parseInt(num2.value)-1;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="image/fish (2).png" alt="">海裡撈
+            <a class="style" href="shopcar.html"><img class="search" src="image/shopping-cart.png" alt=""></a>
+            <a class="style" href="member_center.html"><img class="search" src="image/user.png" alt=""></a>
+            <div class="style"><div class="search_con"><input type="text" placeholder="搜尋" id=""><button class="searchbutton"><img src="image/search.png" class="search1" alt=""></button></div></div> 
+        </div>
+        <div>
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <dl>
+                            <dt><a href="index.html">首頁</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="">所有商品</a></dt>
+                            <dd><a href="alllist.html">ALL</a></dd>
+                            <dd><a href="sortlist.html">魚類</a></dd>
+                            <dd><a href="sortlist.html">甲殼類</a></dd>
+                            <dd><a href="sortlist.html">軟體動物類</a></dd>
+                            <dd><a href="sortlist.html">淺海</a></dd>
+                            <dd><a href="sortlist.html">深海</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="sale.html">本月活動優惠</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="abuot_us.html">關於我們</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="contactus.html">聯絡我們</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="buy.html">購物須知</a></dt>
+                        </dl>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="cartitle">
+            <img class="cartpic" src="image/shopping-cart (1).png" alt="">
+            <span>購物清單</span>
+        </div>
+        <div class="carbac">
+            <div class="cartbac">
+                <div class="cart_list">
+                    <div class="list_left">
+                        <img class="list_pic" src="image/f6.jpg" alt="">
+                    </div>
+                    <div class="list_right">
+                        <span>
+                            <p>龍石斑魚</p>
+                            <p>
+                                規格 <select name="a">
+                                    <option value="1">一盒</option>
+                                    <option value="2">半盒</option>
+                                    <option value="3">單買</option>
+                                </select>
+                            </p>
+                            <p class="textstyle">$290</p>
+                            <p>
+                                <input type="button" value="-" onclick="minus()">
+                                <input type="text" id="num" value="0">
+                                <input type="button" value="+" onclick="add()">
+                            </p>
+                        </span>
+                    </div>
+                    <div class="list_r"></div>
+                </div>
+                <div class="cart_list">
+                    <div class="list_left">
+                        <img class="list_pic" src="image/c2.jpg" alt="">
+                    </div>
+                    <div class="list_right">
+                        <span>
+                            <p>波士頓龍蝦</p>
+                            <p>
+                                規格 <select name="norm">
+                                    <option value="1">一盒</option>
+                                    <option value="2">半盒</option>
+                                    <option value="3">單買</option>
+                                </select>
+                            </p>
+                            <p class="textstyle">$800</p>
+                            <p>
+                                <input type="button" value="-" onclick="minus1()">
+                                <input type="text" id="num1" value="0">
+                                <input type="button" value="+" onclick="add1()">
+                            </p>
+                        </span>
+                    </div>
+                    <div class="list_r"></div>
+                </div>
+                <div class="cart_list">
+                    <div class="list_left">
+                        <img class="list_pic" src="image/s4.jpg" alt="">
+                    </div>
+                    <div class="list_right">
+                        <span>
+                            <p>象拔蚌</p>
+                            <p>
+                                規格 <select name="norm" id="">
+                                    <option value="12">一盒</option>
+                                    <option value="6">半盒</option>
+                                    <option value="1">單買</option>
+                                </select>
+                            </p>
+                            <p class="textstyle">$198</p>
+                            <p>
+                                <input type="button" value="-" onclick="minus2()">
+                                <input type="text" id="num2" value="0">
+                                <input type="button" value="+" onclick="add2()">
+                            </p>
+                        </span>
+                    </div>
+                    <div class="list_r"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <div class="pay">
+            <p class="paytit">選擇送貨及付款方式</p>
+            <div class="paycontent">
+                <p>付款方式
+                    <select name="paymethod" id="">
+                        <option value="">貨到付款</option>
+                        <option value="">信用卡</option>
+                    </select>
+                </p>
+                <div>
+                    <div style="float: left;"><p >寄送方式</p></div>
+                    <div class="storechoice">
+                        <label for="store1">7-11 $60</label>
+                        <div class="choice_box">
+                            <input type="radio" name="store" id="store1">
+                            <div class="choice_contnet">
+                                <span><a href="#">新增7-11門市+</a></span>
+                            </div>
+                        </div>
+                        <label for="store2">全家 $60</label>
+                        <div class="choice_box">
+                            <input type="radio" name="store" id="store2">
+                            <div class="choice_contnet">
+                                <span><a href="#">新增全家門市+</a></span>
+                            </div>
+                        </div>
+                        <label for="store3">OK Mart $45</label>
+                        <div class="choice_box">
+                            <input type="radio" name="store" id="store3">
+                            <div class="choice_contnet">
+                                <span><a href="#">新增OK Mart門市+</a></span>
+                            </div>
+                        </div>
+                        <label for="store4">賣家宅配 $80</label>
+                        <div class="choice_box">
+                            <input type="radio" name="store" id="store4">
+                            <div class="choice_contnet">
+                                <span><a href="#">新增地址+</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttonpos">
+            <input type="button" onclick="location.href='pay.html'" value="前往結帳!!" class="buttonstyle">
+        </div>
+    </aside>
+    <section>
+        <div class="information">
+                <p class="paytit">訂單資訊</p>
+                <div class="informationbac">
+                    <p>小計: $1,288</p>
+                    <p>運費: $60</p>
+                    <p>優惠券: <input type="text" placeholder="請輸入優惠券代碼"></p><br>
+                    <div class="line"></div><br>
+                    <table>
+                        <tr>
+                            <td>總金額</td>
+                            <td>$1,348</td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <a href="sale.html">最新消息</a>
+            <a href="buy.html">常見問題</a>
+            <a href="buy.html">會員問題</a>
+            <a href="buy.html">售後服務</a>
+        </nav>
+        <div>
+            tel:(03)111-1111<br>
+            320桃園市中壢區中北路200號<br>
+            Copyright©2023_yu 
+        </div>
+        <div>
+            <a href="mailto:a0981002215@gmail.com" enctype="text/plain"><img class="social" src="image/email.png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/instagram.png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/line (1).png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/facebook.png" alt=""></a>
+        </div>        
+    </footer>
+</body>
+</html>

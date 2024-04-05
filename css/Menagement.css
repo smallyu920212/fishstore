@@ -1,0 +1,38 @@
+main article{
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+main article section{
+    width: 95%;
+    height: 95%;
+    margin-left: 2.5%;
+    margin-top: 1%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "標楷體";
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+.goodpic{
+    width: 30px;
+    height: 30px;
+}
+
+main article section .button{
+    margin-left: 40%;
+    margin-top: 5%;
+    padding-left: 1%;
+}

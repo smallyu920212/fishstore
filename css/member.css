@@ -1,0 +1,89 @@
+body{
+    width: 100%;
+    height: 750px;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows:80px auto 130px;
+    grid-template-columns: 15% auto;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+main{
+    grid-area: main;
+    /* background-color: #eee; */
+    margin: 0%;
+    padding: 0%; 
+}
+
+aside{
+    grid-area: aside;
+    /* background-color: rgb(88, 171, 181); */
+    font-family: "標楷體";
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%; 
+}
+
+aside nav{
+    margin-top: 25%;
+    /* margin-left: 40%; */
+}
+
+aside nav a{
+    line-height: 0.8cm;
+}
+
+aside nav a:visited{
+    color: black;
+}
+
+aside nav a:link{
+    color: black;
+}
+
+aside nav a:hover{
+    color: #1d5a9a;
+}
+
+h3{
+    text-align: center;
+    font-family: "標楷體";
+}
+
+hr{
+    width: 90%;
+    margin-left: 5%;
+}
+
+aside nav .sign{
+    background-color:#d4e5ef;
+    padding-left: 40%;
+
+}
+
+aside nav .nosign{
+    padding-left: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/buy.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="image/fish (2).png" alt="">海裡撈
+            <a class="style" href="shopcar.html"><img class="search" src="image/shopping-cart.png" alt=""></a>
+            <a class="style" href="member_center.html"><img class="search" src="image/user.png" alt=""></a>
+            <div class="style"><div class="search_con"><input type="text" placeholder="搜尋" id=""><button class="searchbutton"><img src="image/search.png" class="search1" alt=""></button></div></div> 
+        </div>
+        <div>
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <dl>
+                            <dt><a href="index.html">首頁</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="">所有商品</a></dt>
+                            <dd><a href="alllist.html">ALL</a></dd>
+                            <dd><a href="sortlist.html">魚類</a></dd>
+                            <dd><a href="sortlist.html">甲殼類</a></dd>
+                            <dd><a href="sortlist.html">軟體動物類</a></dd>
+                            <dd><a href="sortlist.html">淺海</a></dd>
+                            <dd><a href="sortlist.html">深海</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="sale.html">本月活動優惠</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="abuot_us.html">關於我們</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="contactus.html">聯絡我們</a></dt>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="buy.html">購物須知</a></dt>
+                        </dl>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div id="oftenQ">
+                <h3>常見問題</h3>
+                <div>
+                    <button class="Q" id="Q1">是否提供收據?</button>
+                    <div class="A" id="A1">有統編/載具需求，請記得於訂單備註。</div>
+                </div>
+                <div>
+                    <button class="Q" id="Q2">請問付款方式有哪些?</button>
+                    <div class="A" id="A2">我們目前提供線上刷卡、ATM轉帳、貨到付款、超商取貨付款，四種付款方式</div>
+                </div>
+                <div>
+                    <button class="Q" id="Q3">沒有在領取的期限內取貨該怎麼辦？</button>
+                    <div class="A" id="A3">  若您逾期未至門市取貨時，商品將會退回本公司，訂單亦將自動取消無法重新配送，如您仍需要該商品，請再次重新上網訂購。<br>
+                        提醒您，若有以下情況，將影響您未來下單的結帳方式：<br>
+                        若您有1次以上(含1次)未於通知期限內至指定門巿取貨，未來您將無法使用便利商店取貨付款服務，僅開放信用卡與匯款方式結帳。<br>
+                        貨到付款未取／拒收件達 1 次以上(含1次)，未來將無法使用貨到付款服務。<br><br>
+                        請您與我們共同珍惜寶貴的訂購資源及維護自身權益。
+                        </div>
+                </div>
+                <div>
+                    <button class="Q" id="Q4">如何聯絡賣家?</button>
+                    <div class="A" id="A4">可至商店最下方尋找網站聯絡資訊，或利用「聯絡我們」功能，提出您的需求唷～</div>
+                </div>
+            </div>
+
+            <div id="memberQ">
+                <h3>會員問題</h3>
+                <div>
+                    <button class="Q" id="Q5">如何加入會員?</button>
+                    <div class="A" id="A5">可至商店右上方點選人像圖示「註冊」，即可加入會員。</div>
+                </div>
+                <div>
+                    <button class="Q" id="Q6">一定要註冊成為會員嗎?好處是什麼?</button>
+                    <div class="A" id="A6">本網站不強制註冊會員，但是需要註冊的會員才能訂購喔!成為會員的好處可享有不定期專屬會員折扣活動、優惠碼…。</div>
+                </div>
+                <div>
+                    <button class="Q" id="Q7">會員需要付出額外費用嗎？</button>
+                    <div class="A" id="A7">成為會員完全不需要付費，即可享有完整的會員優惠，不定時的活動通知 </div>
+                </div>
+                <div>
+                    <button class="Q" id="Q8">忘記登入資訊怎麼辦？</button>
+                    <div class="A" id="A8">不用擔心！請您點擊「忘記密碼」重新設定新密碼即可。</div>
+                </div>
+            </div>
+
+            <div id="service">
+                <h3>售後服務</h3>
+                <div>
+                    <button class="Q" id="Q9">收貨後與網站說明不符，或者為瑕疵品，怎麼辦?</button>
+                    <div class="A" id="A9">請保留交易之相關紀錄，並與我們聯繫，如仍無法排除交易糾紛，您可向行政院消費者保護會申訴：https://appeal.cpc.ey.gov.tw/WWW/Default.aspx</div>
+                </div>
+                <div>
+                    <button class="Q" id="Q10">我要退換貨!</button>
+                    <div class="A" id="A10">親愛的顧客您好：
+                        為保障其他消費者權益及確保產品安全衛生，本店之商品皆為新鮮之冷藏及冷凍食品恕無法接受個人問題退換貨。<br>
+                        如收到商品為瑕疵品，有解凍損壞之狀況可申請退貨。<br>
+                        請於收貨二小時內拍照，傳至本店e-mail與我們即時聯繫！<br>
+                        我們將會儘快為您處理，否則恕不接受換貨。<br>
+                        退貨時請將商品連同發票及原外包裝盒一併保留，本公司將會派員或貨運作退換貨處理，謝謝！
+                        </div>
+                </div>
+                <div>
+                    <button class="Q" id="Q11">收到商品發現怎麼裡面有空氣？這樣會不會壞？</button>
+                    <div class="A" id="A11">運送過程可能會因為搖晃震動導致失真空狀況，並不影響產品品質，故無法作為換貨依據。</div>
+                </div>
+                <div>
+                    <button class="Q" id="Q12">商品跟我想的不一樣？	</button>
+                    <div class="A" id="A12">因每隻個體大小不一，以實際產品狀況為主，每樣產品皆為標準規格內足重出貨。產品展示圖僅供參考使用。</div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+              $("#Q1").click(function(){
+                $("#A1").slideToggle(300);
+              });
+            })
+
+            $(document).ready(function(){
+              $("#Q2").click(function(){
+                $("#A2").slideToggle(300);
+              });
+            })
+
+            $(document).ready(function(){
+              $("#Q3").click(function(){
+                $("#A3").slideToggle(300);
+              });
+            })
+
+            $(document).ready(function(){
+              $("#Q4").click(function(){
+                $("#A4").slideToggle(300);
+              });
+            })
+            $(document).ready(function(){
+              $("#Q5").click(function(){
+                $("#A5").slideToggle(300);
+              });
+            })
+            $(document).ready(function(){
+              $("#Q6").click(function(){
+                $("#A6").slideToggle(300);
+              });
+            })
+            $(document).ready(function(){
+              $("#Q7").click(function(){
+                $("#A7").slideToggle(300);
+              });
+            })
+            $(document).ready(function(){
+              $("#Q8").click(function(){
+                $("#A8").slideToggle(300);
+              });
+            })
+            $(document).ready(function(){
+              $("#Q9").click(function(){
+                $("#A9").slideToggle(300);
+              });
+            })
+            $(document).ready(function(){
+              $("#Q10").click(function(){
+                $("#A10").slideToggle(300);
+              });
+            })
+            $(document).ready(function(){
+              $("#Q11").click(function(){
+                $("#A11").slideToggle(300);
+              });
+            })
+            $(document).ready(function(){
+              $("#Q12").click(function(){
+                $("#A12").slideToggle(300);
+              });
+            })
+          </script>
+    </main>
+   
+    <footer>
+        <nav>
+            <a href="sale.html">最新消息</a>
+            <a href="buy.html">常見問題</a>
+            <a href="buy.html">會員問題</a>
+            <a href="buy.html">售後服務</a>
+        </nav>
+        <div>
+            tel:(03)111-1111<br>
+            320桃園市中壢區中北路200號<br>
+            Copyright©2023_yu 
+        </div>
+        <div>
+            <a href="mailto:a0981002215@gmail.com" enctype="text/plain"><img class="social" src="image/email.png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/instagram.png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/line (1).png" alt=""></a>
+            <a href="https://instagram.com/yu._0212?igshid=ZjE2NGZiNDQ="><img class="social" src="image/facebook.png" alt=""></a>
+        </div>        
+    </footer>
+</body>
+</html>

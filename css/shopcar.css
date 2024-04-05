@@ -1,0 +1,249 @@
+body{
+    width: 100%;
+    height: 1260px;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    font-family: "標楷體";
+    grid-template-rows:80px 650px 400px 130px;
+    grid-template-columns: auto 40%;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "aside section"
+    "footer footer";
+}
+
+main{
+    grid-area: main;
+    /* background-color: antiquewhite; */
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    grid-area: aside;
+    /* background-color: aquamarine; */
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+section{
+    grid-area: section;
+    /* background-color: blueviolet; */
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.carbac{
+    width: 90%;
+    height: 580px;
+    background-color: lightblue;
+    margin-top: 2%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* margin-left:5%; */
+}
+
+.cartbac{
+    width: 100%;
+    height: 530px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartitle{
+    background-color:lightblue;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top:13%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartpic{
+    width: 50px;
+    height: 50px;
+    margin-top: 30%;
+}
+
+.cart_list{
+    width: 90%;
+    height: 150px;
+    /* background-color: #eee; */
+    margin-bottom: 0.5cm;
+    display: flex;
+    flex-direction: row;
+}
+
+.list_left{
+    width: 20%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_right{
+    width: 70%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+
+
+.list_r{
+    width: 10%;
+    height: 100%;
+    /* background-color: black; */
+}
+
+.list_pic{
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+}
+
+.textstyle{
+    color: red;
+}
+
+.pay{
+    width: 90%;
+    height: 80%;
+    background-color: lightblue;
+    margin-left: 7%;
+    
+}
+
+.information{
+    width: 88%;
+    height: 80%;
+    background-color: lightblue;
+    
+}
+
+.paytit{
+    background-color: white;
+    text-align: center;
+    display: inline;
+    padding-left:30% ;
+    padding-right:30% ;
+    margin-left: 10%;
+    line-height: 1cm;
+    font-size: 19px;
+}
+
+.informationbac{
+    width: 75%;
+    height: 80%;
+    background-color: white;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.informationbac table{
+    width: 70%;
+    margin-left: 5%;
+}
+
+.informationbac p{
+    margin-left: 5%;
+}
+
+.line{
+    width: 85%;
+    height: 1px;
+    background-color: #c7c7c7;
+    margin-left: 5%;
+}
+
+.buttonpos{
+    margin-top: 3%;
+    margin-left: 80%;
+}
+
+.buttonstyle{
+    background-color: lightblue;
+    padding: 0.1cm 1.5cm;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: "標楷體";
+}
+
+.paycontent{
+    margin-left: 1cm;
+}
+
+.paycontent select{
+    width: 5cm;
+    border: none;
+}
+
+.list_right select{
+    width: 5cm;
+    border: none;
+}
+
+.paycontent p{
+    margin-left: 1cm;
+    font-size: 17px;
+}
+
+.storechoice{
+    width: 70%;
+    height: 50%;
+    float: right;
+    margin-right: 15%;
+    margin-top: 2%;
+} 
+
+.storechoice label{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    padding-top: 0.1cm;
+    padding-bottom: 0.1cm;
+    margin-bottom: 1%;
+}
+
+.choice_contnet{
+    height: 0px;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.5s;
+    color: red;
+    margin-bottom: 1%;
+}
+
+input[type="radio"]:checked+.choice_contnet{
+    height: 25px;
+}
+
+.storechoice input[type="radio"]{
+    display: none;
+} 

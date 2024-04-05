@@ -1,0 +1,35 @@
+footer{
+    grid-area: footer;
+    background-color: #d4e5ef;
+    text-align: center;
+    font-family: "標楷體";
+    font-size: 17px;
+    position: sticky;
+}
+
+
+.social{
+    width: 30px;
+    height: 30px;
+    padding-right: 0.8cm;
+}
+
+footer nav{
+    margin-top: 0.3cm;
+}
+
+footer nav a{
+    padding-right: 1cm;
+}
+
+footer nav a:visited{
+    color: black;
+}
+
+footer nav a:link{
+    color: black;
+}
+
+footer nav a:hover{
+    color: #1d5a9a;
+}

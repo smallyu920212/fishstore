@@ -1,0 +1,101 @@
+body{
+    width: 100%;
+    height: 750px;
+    margin: 0px;
+    padding: 0px;
+    font-family: "標楷體";
+    display: grid;
+    grid-template-rows:80px auto 130px;
+    grid-template-columns:auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+main{
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+}
+.fuction {
+    text-align: right;
+}
+
+.menu {
+    margin-left: 30px;
+    padding-right: 20px;
+}
+
+
+.all {
+    display: flex;
+    margin: 50px;
+}
+
+.Qbox {
+    width: 300px;
+}
+
+.Q {
+    background-color: lightblue;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: left;
+    color: darkblue;
+    font-size: 25px;
+
+}
+
+#Q1:hover {
+    color: red;
+
+}
+
+#Q2:hover {
+    color: red;
+}
+
+#Q3:hover {
+    color: red;
+}
+
+#Q4:hover {
+    color: red;
+}
+
+.A {
+    display: none;
+}
+
+.contactbox {
+    width: 700px;
+    margin: 0px 50px;
+}
+
+.box {
+    border: 1px solid black;
+    width: 700px;
+    height: 500px;
+    text-align: start;
+
+}
+
+/*.input-field {
+    width: 300px;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 15px;
+    border: 1px solid darkblue;
+    border-bottom: 1px solid #999;
+    height: 15px;
+    background: transparent;
+}
+*/
+.btn {
+    width: 50px;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: end;
+}

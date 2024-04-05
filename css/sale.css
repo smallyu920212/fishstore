@@ -1,0 +1,135 @@
+body{
+    width: 100%;
+    height: 1310px;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows:80px 450px 650px 130px;
+    grid-template-columns:auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "section"
+    "footer";
+}
+main{
+    grid-area: main;
+    margin: 0%;
+    padding: 0%;
+}
+
+section{
+    grid-area: section;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.sortgood{
+    width: 100%;
+    height: 38%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.tit{
+    font-size: 20px;
+    text-align: center;
+    background-color: lightblue;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1cm;
+}
+
+.card{
+    width: 220px;
+    height: 250px;
+    margin: 0% 2% 1% 2%;
+}
+
+.cardphoto{
+    width: 100%;
+    height: 70%;
+    background-color:#d4e5ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.cardpic{
+    width: 150px;
+    height: 150px;
+}
+
+.cardtext{
+    width: 100%;
+    height: 30%;
+}
+
+.cardtext1{
+    width: 100%;
+    height: 70%;
+    background-color: lightblue;
+    font-family: "標楷體";
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardtext2{
+    width: 100%;
+    height: 30%;
+    background-color:lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+
+
+.cartphoto{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.3cm;
+}
+
+.hwrap {
+    overflow: hidden; 
+    background: rgb(142, 192, 196);
+  }
+   
+  .hmove { display: flex; }
+  
+  .hitem {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    color: red;
+    font-family: "標楷體";
+  }
+   
+  /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+  /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+  @keyframes tickerh {
+    0% { transform: translate3d(100%, 0, 0); }
+    100% { transform: translate3d(-400%, 0, 0); }
+  }
+  .hmove { animation: tickerh linear 60s infinite; }
+  .hmove:hover { animation-play-state: paused; }
